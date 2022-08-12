@@ -1,32 +1,32 @@
 public class GameChar {
-    private String name;
-    private String ID;
+    private String charName;
+    private String idNumber;
     private int damage;
     private int health;
     private int coin;
 
-    public GameChar(String ID, String name, int damage, int health, int coin) {
-        this.name = name;
-        this.ID = ID;
+    public GameChar(String ID, String charName, int damage, int health, int coin) {
+        this.charName = charName;
+        this.idNumber = ID;
         this.damage = damage;
         this.health = health;
         this.coin = coin;
     }
 
-    public String getName() {
-        return name;
+    public String getCharName() {
+        return charName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCharName(String name) {
+        this.charName = charName;
     }
 
-    public String getID() {
-        return ID;
+    public String getIdNumber() {
+        return idNumber;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
     }
 
     public int getDamage() {
