@@ -91,10 +91,37 @@ public class Player {
 
     }
 
+    public void selectLoc() {
+        while (true) {
+            Location location = null;
+            System.out.println("Locations : ");
+            System.out.println("ID : 1 - Safe House --> There is no enemy !!" +
+                    "\nID : 2 - Store \t--> You buy something and improve yourself !!");
+
+            System.out.print("Please choose one : ");
+            int selectLoc = scan.nextInt();
+            switch (selectLoc) {
+                case 1:
+                    location = new SafeHouse(this);
+                    break;
+                case 2:
+                    location = new Store(this);
+                    break;
+                default:
+                    location = new SafeHouse(this);
+            }
+            if (!location.onLocation()) {
+                System.out.println("GAME OVER !!");
+                break;
+            }
+        }
+    }
+
     public void initChar(GameChar gameChar) {
         this.setDamage(gameChar.getDamage());
         this.setHealth(gameChar.getHealth());
         this.setCoin(gameChar.getCoin());
         this.setCharName(gameChar.getCharName());
     }
+
 }
