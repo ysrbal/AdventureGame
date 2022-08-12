@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class Player {
+    Scanner scan = new Scanner(System.in);
     private int damage;
     private int health;
     private int coin;
