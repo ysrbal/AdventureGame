@@ -57,6 +57,44 @@ public class Player {
     }
 
     public void selectChar() {
+        GameChar[] charList = {new Samurai(), new Archer(), new Knight()};
 
+        System.out.println("Please select the character : ");
+        for (GameChar character : charList) {
+            System.out.println("ID : " + character.getIdNumber() +
+                    "\t Name : " + character.getCharName() +
+                    "\t Damage : " + character.getDamage() +
+                    "\t Health : " + character.getHealth() +
+                    "\t Coin : " + character.getCoin());
+        }
+        System.out.print("Please choose one : ");
+        int selectID = scan.nextInt();
+        switch (selectID) {
+            case 1:
+                initChar(new Samurai());
+                break;
+            case 2:
+                initChar(new Archer());
+                break;
+            case 3:
+                initChar(new Knight());
+                break;
+            default:
+                initChar(new Archer());
+        }
+
+        System.out.println("Your character is ");
+        System.out.println("Name : " + this.getCharName() +
+                "\t Damage :  " + this.getDamage() +
+                "\t Health : " + this.getHealth() +
+                "\t Money : " + this.getCoin());
+
+    }
+
+    public void initChar(GameChar gameChar) {
+        this.setDamage(gameChar.getDamage());
+        this.setHealth(gameChar.getHealth());
+        this.setCoin(gameChar.getCoin());
+        this.setCharName(gameChar.getCharName());
     }
 }
