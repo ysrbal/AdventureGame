@@ -6,7 +6,7 @@ public class Store extends Location {
     @Override
     public boolean onLocation() {
         System.out.println("----- STORE -----");
-        System.out.println("Welcome to the store. You can buy different types items here.");
+        System.out.println("Welcome to the store." +"\nYou can buy different types items here.");
         return true;
     }
 
