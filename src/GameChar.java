@@ -1,4 +1,4 @@
-public class GameChar {
+public abstract class GameChar {
     private String charName;
     private String idNumber;
     private int damage;
