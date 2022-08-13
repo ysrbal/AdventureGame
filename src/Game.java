@@ -13,7 +13,7 @@ public class Game {
         p1.selectChar();
         System.out.println("-------------------------------------------");
         System.out.println(p1.getName() + ", this island has been taken over by dark forces. \n" +
-                " We need you to see the good old and bright days again.");
+                "We need you to see the good old and bright days again.");
         p1.selectLoc();
 
 
