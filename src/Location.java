@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public abstract class Location {
+    protected Scanner scan = new Scanner(System.in);
     private Player player;
     private String locName;
     private String locIDNumber;
