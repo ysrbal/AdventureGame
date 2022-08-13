@@ -94,7 +94,7 @@ public class Player {
     public void selectLoc() {
         while (true) {
             Location location = null;
-            System.out.println("Locations : ");
+            System.out.println("##### -- Locations -- #####");
             System.out.println("ID : 1 - Safe House --> There is no enemy !!" +
                     "\nID : 2 - Store \t--> You buy something and improve yourself !!");
 
