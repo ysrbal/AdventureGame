@@ -9,7 +9,7 @@ public class Weapon extends Item {
         Weapon[] weaponList = new Weapon[3];
         weaponList[0] = new Weapon(1, "Gun", 2, 0, 25);
         weaponList[1] = new Weapon(2, "Sword", 3, 0, 35);
-        weaponList[2] = new Weapon(3, "Rifle", 7, 0, 45);
+        weaponList[2] = new Weapon(3, "Rifle", 5, 0, 45);
         return weaponList;
     }
 
