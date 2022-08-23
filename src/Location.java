@@ -1,12 +1,14 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public abstract class Location {
     protected Scanner scan = new Scanner(System.in);
+    protected Random random = new Random();
     private Player player;
     private String locName;
-    private String locIDNumber;
+    private int locIDNumber;
 
-    public Location(Player player, String locIDNumber, String locName) {
+    public Location(Player player, int locIDNumber, String locName) {
         this.player = player;
         this.locIDNumber = locIDNumber;
         this.locName = locName;
@@ -21,11 +23,11 @@ public abstract class Location {
         this.player = player;
     }
 
-    public String getLocIDNumber() {
+    public int getLocIDNumber() {
         return this.locIDNumber;
     }
 
-    public void setLocIDNumber(String locIDNumber) {
+    public void setLocIDNumber(int locIDNumber) {
         this.locIDNumber = locIDNumber;
     }
 
